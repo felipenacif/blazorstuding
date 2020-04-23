@@ -40,3 +40,9 @@
         }
     </tbody>
 </table>
+
+<button @onclick="@OpenWidgetAddCar" class="btn btn-secondary">Abrir Widget</button>
+
+<AppStartBlazor.Components.AddCarWidget @ref="AddCarWidget" CloseEventCallback="@AddCarWidgetBase_OnDialogClose">
+
+</AppStartBlazor.Components.AddCarWidget>

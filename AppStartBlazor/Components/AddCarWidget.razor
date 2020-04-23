@@ -1,0 +1,48 @@
+﻿@inherits AddCarWidgetBase
+
+@if (ShowDialog == true)
+{
+    <div class="modal fade show d-block" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <EditForm Model="@carro" OnValidSubmit="@SubmitForm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Widget</h5>
+                        <button type="button" class="close" data-dismiss="modal" @onclick="@Close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <DataAnnotationsValidator />
+
+                        <div class="form-group row">
+                            <label for="Fabricante" class="col-sm-3">Fabricante</label>
+                            <InputText id="Fabricante" @bind-Value="carro.Fabricante" class="form-control col-sm-8" placeholder="Informe o nome do Fabricante"></InputText>
+                            <ValidationMessage class="offset-sm-3" For="@(() => carro.Fabricante)"></ValidationMessage>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Modelo" class="col-sm-3">Modelo</label>
+                            <InputText id="Modelo" @bind-Value="carro.Modelo" class="form-control col-sm-8" placeholder="Informe o nome do Modelo"></InputText>
+                        </div>
+                        <div class="form-group row">
+                            <label for="AnoFabricacao" class="col-sm-3">Ano de Fabricacao</label>
+                            <InputNumber id="AnoFabricacao" @bind-Value="carro.AnoFabricacao" class="form-control col-sm-3"></InputNumber>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Preco" class="col-sm-3">Preco</label>
+                            <InputNumber id="Preco" @bind-Value="carro.Preco" class="form-control col-sm-3"></InputNumber>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" @onclick="@Close" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+}
+

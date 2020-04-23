@@ -1,4 +1,5 @@
-﻿using AppStartBlazor.Services;
+﻿using AppStartBlazor.Components;
+using AppStartBlazor.Services;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
@@ -20,11 +21,26 @@ namespace AppStartBlazor.Pages
         [Inject]
         public ICarsDataService CarsDataService { get; set; }
 
+        protected AddCarWidgetBase AddCarWidget { get; set; }
+
 
         protected override async Task OnInitializedAsync()
         {
             ListaCars = await CarsDataService.GetAllCars();
             //return await base.OnInitializedAsync();
+        }
+
+
+        protected void OpenWidgetAddCar()
+        {
+            AddCarWidget.Show();
+        }
+
+
+        public async void AddCarWidgetBase_OnDialogClose()
+        {
+            ListaCars = await CarsDataService.GetAllCars();
+            StateHasChanged();
         }
 
 

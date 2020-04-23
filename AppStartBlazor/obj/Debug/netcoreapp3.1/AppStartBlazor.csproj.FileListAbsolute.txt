@@ -275,3 +275,5 @@ D:\Personal\Git\blazorstuding\AppStartBlazor\bin\Debug\netcoreapp3.1\AppStartBla
 D:\Personal\Git\blazorstuding\AppStartBlazor\bin\Debug\netcoreapp3.1\AppStartBlazor.Api.pdb
 D:\Personal\Git\blazorstuding\AppStartBlazor\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CarEdit.razor.g.cs
 D:\Personal\Git\blazorstuding\AppStartBlazor\obj\Debug\netcoreapp3.1\Razor\Pages\CarEdit.razor.g.cs
+D:\Personal\Git\blazorstuding\AppStartBlazor\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\AddCarWidget.razor.g.cs
+D:\Personal\Git\blazorstuding\AppStartBlazor\obj\Debug\netcoreapp3.1\Razor\Components\AddCarWidget.razor.g.cs

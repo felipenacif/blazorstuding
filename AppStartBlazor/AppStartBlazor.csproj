@@ -19,8 +19,4 @@
     <ProjectReference Include="..\AppStartBlazor.Domain\AppStartBlazor.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Components\" />
-  </ItemGroup>
-
 </Project>
