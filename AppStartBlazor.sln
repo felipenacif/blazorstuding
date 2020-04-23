@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppStartBlazor", "AppStartBlazor\AppStartBlazor.csproj", "{211FF451-ADFD-4C7B-981D-5A5078CC61C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppStartBlazor", "AppStartBlazor\AppStartBlazor.csproj", "{211FF451-ADFD-4C7B-981D-5A5078CC61C9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppStartBlazor.Domain", "AppStartBlazor.Domain\AppStartBlazor.Domain.csproj", "{C2FB8C79-6914-4719-B0DC-E376E4591DEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppStartBlazor.Api", "AppStartBlazor.Api\AppStartBlazor.Api.csproj", "{EFACF225-525E-485E-A256-9647CC07B913}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{211FF451-ADFD-4C7B-981D-5A5078CC61C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{211FF451-ADFD-4C7B-981D-5A5078CC61C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{211FF451-ADFD-4C7B-981D-5A5078CC61C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2FB8C79-6914-4719-B0DC-E376E4591DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2FB8C79-6914-4719-B0DC-E376E4591DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2FB8C79-6914-4719-B0DC-E376E4591DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2FB8C79-6914-4719-B0DC-E376E4591DEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFACF225-525E-485E-A256-9647CC07B913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFACF225-525E-485E-A256-9647CC07B913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFACF225-525E-485E-A256-9647CC07B913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFACF225-525E-485E-A256-9647CC07B913}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

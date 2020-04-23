@@ -3,3 +3,36 @@
 <h1>Hello, world!</h1>
 
 Welcome to your new app.
+
+<br />
+<br />
+
+<h4>Data Binding</h4>
+<hr />
+<div>
+    Fabricante: <input @bind="carro.Fabricante" />
+    <br />
+    Modelo: <input @bind="carro.Modelo" />
+    <br />
+    <hr />
+    <h4>
+        <label>Carro informado: <input @bind-value="carro.Fabricante" @bind-value:event="oninput" /></label>
+        <br />
+        Carro que você vai comprar: @carro.Fabricante/@carro.Modelo
+    </h4>
+</div>
+
+
+@code {
+
+    private AppStartBlazor.Domain.Car carro { get; set; }
+
+    protected override Task OnInitializedAsync()
+    {
+        carro = new Domain.Car() { Id = 1, Fabricante = "Fiat", Modelo = "Uno", AnoFabricacao = 2002, Preco = 8000 };
+
+
+        return base.OnInitializedAsync();
+    }
+
+}

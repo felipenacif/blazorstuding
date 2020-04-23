@@ -1,0 +1,30 @@
+﻿@page "/posts"
+@inherits PostsBase
+
+<h3>Posts</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Titulo</th>
+            <th>Resumo</th>
+            <th>Data de Criação</th>
+            <th>Nome do Usuário</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Posts)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Title</td>
+                <td>@item.Excerpt</td>
+                <td>@item.CreationDate.ToShortDateString()</td>
+                <td>@item.CreatorUser.UserName</td>
+                <td>@item.PublishStatus</td>
+            </tr>
+        }
+    </tbody>
+</table>

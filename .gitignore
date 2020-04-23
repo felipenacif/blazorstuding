@@ -3,3 +3,6 @@
 ################################################################################
 
 /AppStartBlazor.Api/bin/Debug/netcoreapp3.1
+/AppStartBlazor.Api/obj
+/AppStartBlazor.Domain/bin/Debug/netcoreapp3.1
+/AppStartBlazor.Domain/obj

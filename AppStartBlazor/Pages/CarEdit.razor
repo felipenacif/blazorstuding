@@ -1,0 +1,62 @@
+﻿@page "/carsedit"
+@page "/carsedit/{IdCarro}"
+@inherits CarEditBase
+
+<h3 class="page-title">Editando o Carro: @carro.Fabricante/@carro.Modelo</h3>
+
+@if (!Saved)
+{
+    <EditForm Model="@carro" OnValidSubmit="@SubmitForm">
+
+        <DataAnnotationsValidator />
+
+        <div class="form-group row">
+            <label for="Fabricante" class="col-sm-3">Fabricante</label>
+            <InputText id="Fabricante" @bind-Value="carro.Fabricante" class="form-control col-sm-8" placeholder="Informe o nome do Fabricante"></InputText>
+            <ValidationMessage class="offset-sm-3" For="@(() => carro.Fabricante)"></ValidationMessage>
+        </div>
+        <div class="form-group row">
+            <label for="Modelo" class="col-sm-3">Modelo</label>
+            <InputText id="Modelo" @bind-Value="carro.Modelo" class="form-control col-sm-8" placeholder="Informe o nome do Modelo"></InputText>
+        </div>
+        <div class="form-group row">
+            <label for="AnoFabricacao" class="col-sm-3">Ano de Fabricacao</label>
+            <InputNumber id="AnoFabricacao" @bind-Value="carro.AnoFabricacao" class="form-control col-sm-3"></InputNumber>
+        </div>
+        <div class="form-group row">
+            <label for="Preco" class="col-sm-3">Preco</label>
+            <InputNumber id="Preco" @bind-Value="carro.Preco" class="form-control col-sm-3"></InputNumber>
+        </div>
+        <div class="form-group row">
+            <label for="Preco" class="col-sm-3">País de Origem</label>
+            @if (paises == null)
+            {
+            <p><em>Loading...</em></p>
+            }
+            else
+            {
+            <InputSelect id="PaisOrigem" class="form-control col-sm-3" @bind-Value="alpha2Code">
+                @foreach (var item in paises)
+                {
+                    <option value="@item.alpha2Code">@item.name</option>
+                }
+            </InputSelect>
+            }
+        </div>
+
+        <hr />
+
+        <div>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </div>
+    </EditForm>
+}
+else
+{
+    <div class="alert @StatusClass">
+        @Message <br />
+        <a href="/cars">Ver todos os carros cadastrados</a>
+    </div>
+}
+
+

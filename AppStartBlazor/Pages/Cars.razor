@@ -1,0 +1,42 @@
+﻿@page "/cars"
+@inherits CarsBase
+
+<h3>Cars</h3>
+<div class="text-right">
+    <a class="btn btn-primary" href="/carsedit"><i class="oi oi-pencil"></i> Adicionar novo</a>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Fabricante</th>
+            <th>Modelo</th>
+            <th>Ano</th>
+            <th>Valor</th>
+            <th>Editar</th>
+            <th>Excluir</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (ListaCars == null)
+        {
+            <p><em>Loading...</em></p>
+        }
+        else
+        {
+            @foreach (var item in ListaCars)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Fabricante</td>
+                    <td>@item.Modelo</td>
+                    <td>@item.AnoFabricacao</td>
+                    <td>@item.Preco</td>
+                    <td><a class="btn btn-warning" href="/carsedit/@item.Id"><i class="oi oi-fork"></i></a></td>
+                    <td><a class="btn btn-danger"  href="/carsedit/@item.Id"><i class="oi oi-trash"></i></a></td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

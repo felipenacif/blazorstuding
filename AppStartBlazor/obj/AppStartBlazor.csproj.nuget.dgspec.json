@@ -1,23 +1,91 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Felipe\\Desktop\\GIT\\AppStartBlazor\\AppStartBlazor\\AppStartBlazor\\AppStartBlazor.csproj": {}
+    "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor\\AppStartBlazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Felipe\\Desktop\\GIT\\AppStartBlazor\\AppStartBlazor\\AppStartBlazor\\AppStartBlazor.csproj": {
+    "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor.Api\\AppStartBlazor.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felipe\\Desktop\\GIT\\AppStartBlazor\\AppStartBlazor\\AppStartBlazor\\AppStartBlazor.csproj",
-        "projectName": "AppStartBlazor",
-        "projectPath": "C:\\Users\\Felipe\\Desktop\\GIT\\AppStartBlazor\\AppStartBlazor\\AppStartBlazor\\AppStartBlazor.csproj",
-        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felipe\\Desktop\\GIT\\AppStartBlazor\\AppStartBlazor\\AppStartBlazor\\obj\\",
+        "projectUniqueName": "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor.Api\\AppStartBlazor.Api.csproj",
+        "projectName": "AppStartBlazor.Api",
+        "projectPath": "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor.Api\\AppStartBlazor.Api.csproj",
+        "packagesPath": "C:\\Users\\NYB5\\.nuget\\packages\\",
+        "outputPath": "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NYB5\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor.Domain\\AppStartBlazor.Domain.csproj": {
+                "projectPath": "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor.Domain\\AppStartBlazor.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor.Domain\\AppStartBlazor.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor.Domain\\AppStartBlazor.Domain.csproj",
+        "projectName": "AppStartBlazor.Domain",
+        "projectPath": "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor.Domain\\AppStartBlazor.Domain.csproj",
+        "packagesPath": "C:\\Users\\NYB5\\.nuget\\packages\\",
+        "outputPath": "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\NYB5\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,6 +98,68 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor\\AppStartBlazor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor\\AppStartBlazor.csproj",
+        "projectName": "AppStartBlazor",
+        "projectPath": "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor\\AppStartBlazor.csproj",
+        "packagesPath": "C:\\Users\\NYB5\\.nuget\\packages\\",
+        "outputPath": "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\NYB5\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor.Api\\AppStartBlazor.Api.csproj": {
+                "projectPath": "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor.Api\\AppStartBlazor.Api.csproj"
+              },
+              "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor.Domain\\AppStartBlazor.Domain.csproj": {
+                "projectPath": "D:\\Personal\\Git\\blazorstuding\\AppStartBlazor.Domain\\AppStartBlazor.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -60,6 +190,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             }
           },
           "imports": [
@@ -80,7 +214,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

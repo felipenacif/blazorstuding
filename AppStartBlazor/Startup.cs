@@ -15,6 +15,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using AppStartBlazor.Areas.Identity;
 using AppStartBlazor.Data;
+using AppStartBlazor.Services;
+using AppStartBlazor.Domain;
 
 namespace AppStartBlazor
 {
@@ -36,8 +38,20 @@ namespace AppStartBlazor
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
             services.AddRazorPages();
-            services.AddServerSideBlazor();
+
+
+            //registra os serviços das APIs
+            services.AddHttpClient<ICarsDataService, CarsDataService>(client => {
+                client.BaseAddress = new Uri("http://localhost:59833/");
+            });
+            services.AddHttpClient<ICountriesDataService, CountriesDataService>(client => {
+                client.BaseAddress = new Uri("https://restcountries.eu/rest/v2/");
+            });
+
+
+            services.AddServerSideBlazor().AddCircuitOptions(o => o.DetailedErrors = true);
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
             services.AddSingleton<WeatherForecastService>();
         }
